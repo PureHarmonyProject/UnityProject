@@ -1,0 +1,12 @@
+{
+  "string": [{
+    "name": "module_desc",
+    "value": "Unity game ported to HarmonyOS"
+  }, {
+    "name": "MainAbility_desc", 
+    "value": "MainAbility"
+  }, {
+    "name": "MainAbility_label",
+    "value": "UnityGame"
+  }]
+}
