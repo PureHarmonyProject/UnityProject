@@ -131,6 +131,7 @@ Optimize using Unity 6-specific features
 ------------------
 csharp
 // Add this to your project to check compatibility
+``````````````````````````````````````````````````````
 public class HarmonyOSCompatibilityCheck : MonoBehaviour
 {
     void Start()
@@ -142,10 +143,11 @@ public class HarmonyOSCompatibilityCheck : MonoBehaviour
         Debug.Log("Project compatible with PureHarmony!");
         #endif
     }
--- -----
-   
------------------------------------
 }
+
+````````````````````````````````````````````````````````````````````````
+
+
 💡 Bottom Line
 Wait for PureHarmony v2.0 if you require Unity 6 features. For immediate HarmonyOS deployment, use Unity 2022 LTS.
 
