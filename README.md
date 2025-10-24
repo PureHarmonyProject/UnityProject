@@ -55,17 +55,23 @@ Unity 2021 LTS	✅ Primary Target	• Maximum compatibility
 
 • Well-documented APIs
 
+
 🔧 Technical Barriers with Unity 6
+
 1. Native Plugin Interface Changes
+
+``````````````````````````````````````````````````````   
 csharp
 // Unity 6 likely has updated native plugin interfaces
 // Current PureHarmony uses Unity 2022 LTS patterns:
 [DllImport("unity.bridge")]
 public static extern void UnityHarmony_Initialize();
-
+``````````````````````````````````````````````````````
+``````````````````````````````````````````````````````
 // Unity 6 may require:
 [DllImport("unity.bridge", CallingConvention = CallingConvention.Cdecl)]
 public static extern unsafe void UnityHarmony_InitializeV2(IntPtr config);
+``````````````````````````````````````````````````````
 2. Graphics Pipeline Updates
 Unity 6 introduces significant rendering changes:
 
@@ -78,7 +84,9 @@ Different shader compilation targets
 Updated EGL/Vulkan context management
 
 3. IL2CPP & Burst Compiler Evolution
+   
 cpp
+``````````````````````````````````````````````````````
 // Unity 6's IL2CPP may generate different native interfaces
 // Current bridge expects Unity 2022 LTS ABI compatibility
 extern "C" {
@@ -87,6 +95,7 @@ extern "C" {
     
     // Unity 6 may change this interface
 }
+``````````````````````````````````````````````````````
 🗓️ Realistic Timeline
 Phase 1: Foundation (Now)
 ✅ Unity 2021/2022 LTS support
