@@ -34,16 +34,27 @@ Unity_Oniro_SDK_1.0.0.unitypackage
 🔧 ProjectGenerator
 -
 🚫 Current Compatibility Gap
+-
 Unity Version	PureHarmony Status	Key Issues
+-
 Unity 6 (6000.0.53f1)	❌ Not Supported	• Different native plugin API
+-
 • Updated graphics pipeline
+
 • New Vulkan/IL2CPP changes
+
 Unity 2022 LTS	✅ Target Support	• Stable native interfaces
+
 • Proven plugin system
+
 • Mature IL2CPP
+
 Unity 2021 LTS	✅ Primary Target	• Maximum compatibility
+
 • Broad device support
+
 • Well-documented APIs
+
 🔧 Technical Barriers with Unity 6
 1. Native Plugin Interface Changes
 csharp
@@ -117,6 +128,7 @@ Upgrade to Unity 6 once PureHarmony supports it
 Optimize using Unity 6-specific features
 
 🔍 Checking Your Project's Compatibility
+------------------
 csharp
 // Add this to your project to check compatibility
 public class HarmonyOSCompatibilityCheck : MonoBehaviour
@@ -130,6 +142,9 @@ public class HarmonyOSCompatibilityCheck : MonoBehaviour
         Debug.Log("Project compatible with PureHarmony!");
         #endif
     }
+-- -----
+   
+-----------------------------------
 }
 💡 Bottom Line
 Wait for PureHarmony v2.0 if you require Unity 6 features. For immediate HarmonyOS deployment, use Unity 2022 LTS.
