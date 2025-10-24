@@ -60,8 +60,9 @@ Unity 2021 LTS	✅ Primary Target	• Maximum compatibility
 
 1. Native Plugin Interface Changes
 
-``````````````````````````````````````````````````````   
+ 
 csharp
+``````````````````````````````````````````````````````  
 // Unity 6 likely has updated native plugin interfaces
 // Current PureHarmony uses Unity 2022 LTS patterns:
 [DllImport("unity.bridge")]
